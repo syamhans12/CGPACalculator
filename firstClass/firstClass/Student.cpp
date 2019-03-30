@@ -4,9 +4,10 @@
 #include<cstring>
 #include<string>
 
+
 using namespace std;
 
-void Student::setName(char *n)
+void Student::setName( char *n)
 {
 	int length_name = strlen(n) + 1;
 	name = new char[length_name];

@@ -8,13 +8,10 @@ private:
 	string name;
 	string matricnumber;
 public:
-	string setName(string n);
-	string setMatricnumber(string m);
+	void setName(string n);
+	void setMatricnumber(string m);
 
 };
-
-
-
 
 #endif
 

@@ -1,7 +1,8 @@
+#include "Student.h"
 #include<iostream>
 #include<string>
-#include "Student.h"
 using namespace std;
+
 int main()
 {
 	Student a;
@@ -17,11 +18,6 @@ int main()
 	cin >> mainMatricnum;
 	a.setMatricnumber(mainMatricnum);
 
-
-	
-	
-
-	
 	return 0;
 	
 }

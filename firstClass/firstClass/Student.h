@@ -5,11 +5,11 @@
 class Student
 {
 private:
-	string name;
-	string matricnumber;
+	char* name;
+	char* matricnumber;
 public:
-	void setName(string n);
-	void setMatricnumber(string m);
+	void setName(char* n);
+	void setMatricnumber(char* m);
 
 };
 

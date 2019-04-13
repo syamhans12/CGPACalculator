@@ -7,6 +7,9 @@ private:
 	char* subjectname;
 	int credithour;
 	float pointer;
+
+
+
 public:
 
 

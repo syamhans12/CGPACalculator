@@ -5,6 +5,9 @@
 
 using namespace std;
 
-string Subject:: setCourse(string c) { course = c; }
-//string Subject::getCourse() { return course; }
+string Subject :: setCourse(string c) 
+{ 
+	course = c; 
+}
+
 

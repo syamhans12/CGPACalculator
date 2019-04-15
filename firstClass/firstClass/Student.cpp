@@ -1,5 +1,4 @@
 #include "Student.h"
-#include "Subject.h"
 #include<iostream>
 #include<string>
 #include<cstring>

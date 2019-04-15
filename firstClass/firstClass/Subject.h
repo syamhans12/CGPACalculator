@@ -8,7 +8,6 @@ private:
 
 public:
 	string setCourse(string c);
-	//string getCourse();
 
 };
 

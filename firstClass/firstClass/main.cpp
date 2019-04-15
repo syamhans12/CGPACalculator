@@ -3,7 +3,7 @@
 #include<iostream>
 #include<string>
 #include<cstring>
-#define NUMBER 50
+
 using namespace std;
 
 int main()
@@ -11,8 +11,8 @@ int main()
 	
 	Student st1;
 	Subject sb1;
-	char* mainName = new char[NUMBER];
-	char* mainMatricnum = new char[NUMBER];
+	char* mainName = new char[50];
+	char* mainMatricnum = new char[50];
 	string mainCourse;
 	cout << "CGPA Calculator" << endl;
 	cout << "School Of Computing" << endl;

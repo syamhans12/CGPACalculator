@@ -4,7 +4,7 @@
 class Subject
 {
 private:
-	int course;
+	Student* course;
 
 public:
 	void setCourse(int c);

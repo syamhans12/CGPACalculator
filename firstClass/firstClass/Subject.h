@@ -4,11 +4,10 @@
 class Subject
 {
 private:
-	string course;
+	int course;
 
 public:
-	string setCourse(string c);
-
+	void setCourse(int c);
 };
 
 #endif

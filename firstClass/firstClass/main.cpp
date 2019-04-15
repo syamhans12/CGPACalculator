@@ -1,5 +1,6 @@
 #include "Student.h"
 #include "Subject.h"
+
 #include<iostream>
 #include<string>
 #include<cstring>
@@ -11,9 +12,11 @@ int main()
 	
 	Student st1;
 	Subject sb1;
+	
 	char* mainName = new char[50];
 	char* mainMatricnum = new char[50];
-	string mainCourse;
+	int mainCourse;
+	
 	cout << "CGPA Calculator" << endl;
 	cout << "School Of Computing" << endl;
 	cout << "Faculty Of Engineering" << endl;
@@ -23,7 +26,9 @@ int main()
 	cout << endl;
 	cout << "Enter your matric number :";
 	cin >> mainMatricnum;
+	cout << endl;
 	st1.setMatricnumber(mainMatricnum);
+
 	
 	cout << "1.SCSR ( Network & Security )" << endl;
 	cout << "2.SCSV" << endl;

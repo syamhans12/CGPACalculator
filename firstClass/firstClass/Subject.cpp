@@ -5,9 +5,12 @@
 
 using namespace std;
 
-string Subject :: setCourse(string c) 
-{ 
-	course = c; 
+void Subject::setCourse(int  c)
+{
+	switch (c)
+	{
+		case '1':
+			cout
+	}
 }
-
 

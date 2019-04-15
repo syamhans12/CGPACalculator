@@ -9,19 +9,34 @@ using namespace std;
 int main()
 {
 	
-	Student a;
+	Student st1;
+	Subject sb1;
 	char* mainName = new char[NUMBER];
 	char* mainMatricnum = new char[NUMBER];
+	string mainCourse;
 	cout << "CGPA Calculator" << endl;
 	cout << "School Of Computing" << endl;
 	cout << "Faculty Of Engineering" << endl;
 	cout << "Enter your name : ";
 	cin >> mainName;
-	a.setName(mainName);
+	st1.setName(mainName);
 	cout << endl;
 	cout << "Enter your matric number :";
 	cin >> mainMatricnum;
-	a.setMatricnumber(mainMatricnum);
+	st1.setMatricnumber(mainMatricnum);
+	
+	cout << "1.SCSR ( Network & Security )" << endl;
+	cout << "2.SCSV" << endl;
+	cout << "3.SCSJ" << endl;
+	cout << "4.SCSP" << endl;
+	cout << "5.SCSB" << endl;
+	cout << "Choose your course :" << endl;
+	cin >> mainCourse;
+	sb1.setCourse(mainCourse);
+	
+
+
+	
 
 	delete[] mainName;
 	delete[] mainMatricnum;
@@ -29,3 +44,4 @@ int main()
 	return 0;
 	
 }
+

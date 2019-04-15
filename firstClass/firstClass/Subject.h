@@ -4,11 +4,11 @@
 class Subject
 {
 private:
-	char* subjectname;
-	int credithour;
-	float pointer;
-public:
+	string course;
 
+public:
+	string setCourse(string c);
+	//string getCourse();
 
 };
 

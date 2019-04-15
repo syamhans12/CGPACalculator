@@ -4,10 +4,12 @@
 class Subject
 {
 private:
-	Student* course;
+	char* course;
 
 public:
-	void setCourse(int c);
+	void setCourse(char* c);
+	void getCourse();
+	
 };
 
 #endif

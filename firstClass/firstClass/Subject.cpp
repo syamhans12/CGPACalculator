@@ -5,12 +5,12 @@
 
 using namespace std;
 
-void Subject::setCourse(int  c)
+void Subject::setCourse(char*  c)
 {
-	switch (c)
-	{
-		case '1':
-			cout
-	}
+	course = new char[strlen(c) + 1];
+	#pragma warning(suppress : 4996)
+	strcpy(course, c);
 }
+
+
 

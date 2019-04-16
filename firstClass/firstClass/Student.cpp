@@ -2,6 +2,7 @@
 #include<iostream>
 #include<string>
 #include<cstring>
+
 using namespace std;
 
 
@@ -19,16 +20,9 @@ void Student::setMatricnumber(char* m)
 	strcpy(matricnumber, m);
 }
 
-void Student::setSemester(int s)
-{
-	semester = s;
-}
 
-ostream& operator <<(ostream& out, Student& s)
-{
-	out << "The subject for semester " << s.getSemester();
-	return out;
-}
+
+
 
 
 

@@ -13,6 +13,8 @@ int main()
 	
 	
 	int numbersubjtaken;
+	int numberofsemester;
+	char grade;
 
 	cout << " " << endl;
 	cout << "\t CGPA Calculator" << endl;
@@ -21,8 +23,19 @@ int main()
 	cout << " " << endl;
 	
 	cout << "Do you want to calculate for how many semester ? " << endl;
-	cin >> numbersubjtaken;
-	
+	cin >> numberofsemester;
+	for (int i = 0; i < numberofsemester; i++)
+	{
+		cout << "Subject taken for (" << i + 1 << "- SEM)?=>";
+		cin >> numbersubjtaken;
+		for (int j = 0; j < numbersubjtaken; j++)
+		{
+			cout << "Subject " << j + 1 << " grade =>";
+			cin >> grade;
+		}
+		
+		cout << "Your cpa is :";
+	}
 
 	
 	

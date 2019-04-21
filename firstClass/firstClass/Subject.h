@@ -3,6 +3,12 @@
 
 class Subject
 {
+	int _numberofsemester;
+	int _numbersubjtaken;
+public:
+	Subject() {}
+	Subject(int numberofsemester);
+	
 
 
 };

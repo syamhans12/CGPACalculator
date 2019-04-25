@@ -14,7 +14,7 @@ int main()
 	
 	int numbersubjtaken;
 	int numberofsemester;
-	char grade;
+	char grade[2];
 	int credit;
 
 	cout << " " << endl;
@@ -23,7 +23,7 @@ int main()
 	cout << "\t Faculty Of Engineering" << endl;
 	cout << " " << endl;
 	
-	cout << "Do you want to calculate for how many semester ? " << endl;
+	cout << "Do you want to calculate for how many semester ? =>";
 	cin >> numberofsemester;
 	for (int i = 0; i < numberofsemester; i++)
 	{
@@ -36,9 +36,12 @@ int main()
 			cout<<"Grade(A/A-/B/B+..etc) =>";
 			cin >> grade;
 			cout << endl;
-			cout << "Credit hour (1,2,3...etc) =>";
-			cin >> credit;
-			cout << endl;
+			do {
+				
+					cout << "Credit hour (1,2,3...etc) =>";
+				
+				cin >> credit;
+			} while (credit >=1||credit<=4 );
 			
 		}
 		

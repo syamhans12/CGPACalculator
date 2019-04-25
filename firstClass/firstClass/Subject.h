@@ -3,11 +3,10 @@
 
 class Subject
 {
-	int _numberofsemester;
-	int _numbersubjtaken;
+	char _grade[2];
+	int _credithour;
 public:
-	Subject() {}
-	Subject(int numberofsemester);
+	
 	
 
 

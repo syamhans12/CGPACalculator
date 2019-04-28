@@ -10,6 +10,7 @@ using namespace std;
 
 int main()
 {
+	cout << "AIna";
 	
 	Semester sem;
 	Subject subj;

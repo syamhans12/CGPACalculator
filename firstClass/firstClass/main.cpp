@@ -3,7 +3,7 @@
 
 #include<iostream>
 #include<string>
-#include<cstring>
+
  
 
 using namespace std;
@@ -15,7 +15,7 @@ int main()
 	Subject subj;
 	int numbersubjtaken;
 	int numberofsemester;
-	string grade;
+	char grade[2];
 	int credit;
 
 	cout << " " << endl;

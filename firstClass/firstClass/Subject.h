@@ -3,7 +3,7 @@
 
 class Subject
 {
-	string _grade;
+	char _grade[2];
 	int _credithour;
 	int _numsubject;
 public:

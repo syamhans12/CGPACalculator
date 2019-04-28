@@ -1,4 +1,4 @@
-#include "Student.h"
+#include "Semester.h"
 #include "Subject.h"
 
 #include<iostream>
@@ -11,10 +11,11 @@ using namespace std;
 int main()
 {
 	
-	
+	Semester sem;
+	Subject subj;
 	int numbersubjtaken;
 	int numberofsemester;
-	char grade[2];
+	string grade;
 	int credit;
 
 	cout << " " << endl;
@@ -25,23 +26,29 @@ int main()
 	
 	cout << "Do you want to calculate for how many semester ? =>";
 	cin >> numberofsemester;
+	sem.setCountsemester(numberofsemester);
 	for (int i = 0; i < numberofsemester; i++)
 	{
-		cout << "Subject taken for (" << i + 1 << "- SEM)?=>";
+		cout << "Subject taken for (" << i + 1 << "- SEMESTER)?=>";
 		cin >> numbersubjtaken;
+		subj.setNumsubject(numbersubjtaken);
 		cout << endl;
 		for (int j = 0; j < numbersubjtaken; j++)
 		{
-			cout << "Subject " << j + 1 << endl;
-			cout<<"Grade(A/A-/B/B+..etc) =>";
-			cin >> grade;
-			cout << endl;
+			
+
+				cout << "Subject " << j + 1 << endl;
+				cout << "Grade(A/A-/B/B+..etc) =>";
+				cin >> grade;
+				cout << endl;
+			
+			
 			do {
 				
 					cout << "Credit hour (1,2,3...etc) =>";
 				
 				cin >> credit;
-			} while (credit >=1||credit<=4 );
+			} while (credit >4 ||credit<=0);
 			
 		}
 		

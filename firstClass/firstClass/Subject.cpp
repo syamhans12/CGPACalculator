@@ -17,3 +17,17 @@ int Subject::getNumsubject()
 {
 	return _numsubject;
 }
+
+void Subject::setGrade(char* grade)
+{
+	int grade_length = strlen(grade)+1;
+	_grade = new char[grade_length];
+	#pragma warning (suppress:4996)
+	strcpy(_grade, grade);
+
+}
+
+char* Subject::getGrade()
+{
+	return _grade;
+}

@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<string>
+#include<cstring>
 
  
 
@@ -10,13 +11,13 @@ using namespace std;
 
 int main()
 {
-	cout << "Syahmi";
+	
 	
 	Semester sem;
 	Subject subj;
 	int numbersubjtaken;
 	int numberofsemester;
-	char grade[2];
+	char* grade;
 	int credit;
 
 	cout << " " << endl;
@@ -40,7 +41,9 @@ int main()
 
 				cout << "Subject " << j + 1 << endl;
 				cout << "Grade(A/A-/B/B+..etc) =>";
-				cin >> grade;
+				//cin >> grade;
+				//subj.setGrade(grade);
+
 				cout << endl;
 			
 			

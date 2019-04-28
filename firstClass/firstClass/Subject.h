@@ -3,12 +3,15 @@
 
 class Subject
 {
-	char _grade[2];
+	char* _grade;
 	int _credithour;
 	int _numsubject;
 public:
 	void setNumsubject(int numsubject);
 	int getNumsubject();
+
+	void setGrade(char* grade);
+	char* getGrade();
 
 
 };

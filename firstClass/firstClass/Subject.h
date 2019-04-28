@@ -3,14 +3,13 @@
 
 class Subject
 {
-private:
-	char subjectname[50];
-	int credithour;
-	float pointer, total, percentage;
+	string _grade;
+	int _credithour;
+	int _numsubject;
 public:
-	void acceptDat();
-	void display();
-	void calPercent();
+	void setNumsubject(int numsubject);
+	int getNumsubject();
+
 
 };
 

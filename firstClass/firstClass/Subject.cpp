@@ -3,13 +3,16 @@
 #include<string>
 #include<cstring>
 
+
+
 using namespace std;
 
-void Subject::acceptDat()
+void Subject::setNumsubject(int numsubject)
 {
-	cout << "Enter Subject Name: " << endl;
-	cin >> subjectname;
-	cout << "\n Enter credit hour: " << endl;
-	cin >> credithour;
+	_numsubject = numsubject;
+}
 
+int Subject::getNumsubject()
+{
+	return _numsubject;
 }

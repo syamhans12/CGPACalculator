@@ -7,6 +7,8 @@ class Subject
 	int _credithour;
 	int _numsubject;
 public:
+
+	Subject() {}
 	void setNumsubject(int numsubject);
 	int getNumsubject();
 

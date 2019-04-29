@@ -20,6 +20,7 @@ int Subject::getNumsubject()
 
 void Subject::setGrade(char* grade)
 {
+	
 	int grade_length = strlen(grade)+1;
 	_grade = new char[grade_length];
 	#pragma warning (suppress:4996)
@@ -42,7 +43,3 @@ int Subject::getCredit()
 	return _credithour;
 }
 
-void Subject::getInfo(char * g, int ch,int x)
-{
-	
-}

@@ -19,7 +19,7 @@ public:
 	void setCredit(int credit);
 	int getCredit();
 
-	void getInfo(char* g, int ch,int x);
+	
 
 
 };

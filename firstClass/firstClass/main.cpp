@@ -1,5 +1,6 @@
-#include "Semester.h"
 #include "Subject.h"
+#include "Semester.h"
+#include"Calculate.h"
 
 #include<iostream>
 #include<string>
@@ -28,12 +29,13 @@ int main()
 	
 	cout << "Do you want to calculate for how many semester ? =>";
 	cin >> numberofsemester;
-	sem.setCountsemester(numberofsemester);
+	
 	for (int i = 0; i < numberofsemester; i++)
 	{
 		cout << "Subject taken for (" << i + 1 << "- SEMESTER)?=>";
 		cin >> numbersubjtaken;
 		subj.setNumsubject(numbersubjtaken);
+		
 		cout << endl;
 		for (int j = 0; j < numbersubjtaken; j++)
 		{
@@ -52,17 +54,17 @@ int main()
 					cout << "Credit hour (1,2,3...etc) =>";
 				
 				cin >> credit;
-				subj.setCredit(credit); 
+				subj.setCredit(credit);
+				
 			} while (credit >4 ||credit<=0);
+
 			
 		}
+
+		subj.getInfo(subj.getGrade(), subj.getCredit());
 		
 		cout << "Your cpa is :" << endl;
 	}
-
-	
-	
-
 	return 0;
 	
 }

@@ -4,7 +4,8 @@
 
 class Calculate
 {
-	int cgpa;
+	int _cgpa;
+	Subject* _cpa;
 public:
 
 

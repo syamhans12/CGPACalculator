@@ -1,3 +1,4 @@
+#include "Subject.h"
 #include "Semester.h"
 #include<iostream>
 #include<string>
@@ -16,3 +17,6 @@ int Semester::getCountsemester()
 {
 	return _countsemester;
 }
+
+
+

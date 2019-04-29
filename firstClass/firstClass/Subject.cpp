@@ -41,3 +41,8 @@ int Subject::getCredit()
 {
 	return _credithour;
 }
+
+void Subject::getInfo(char * g, int ch)
+{
+
+}

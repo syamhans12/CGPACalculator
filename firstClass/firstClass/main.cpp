@@ -14,7 +14,7 @@ int main()
 {
 	
 	
-	Semester sem;
+	Semester *sem;
 	Subject *subj;
 	int numbersubjtaken;
 	int numberofsemester;
@@ -29,13 +29,14 @@ int main()
 	
 	cout << "Do you want to calculate for how many semester ? =>";
 	cin >> numberofsemester;
-	
+	sem = new Semester[numberofsemester];
+
 	for (int i = 0; i < numberofsemester; i++)
 	{
 		cout << "Subject taken for (" << i + 1 << "- SEMESTER)?=>";
 		cin >> numbersubjtaken;
-		subj = new Subject[numberofsemester];
-		subj[i].setNumsubject(numbersubjtaken);
+		subj = new Subject[numbersubjtaken];
+		//subj[i].setNumsubject(numbersubjtaken);
 		
 		cout << endl;
 		for (int j = 0; j < numbersubjtaken; j++)
@@ -43,29 +44,31 @@ int main()
 			
 
 				cout << "Subject " << j + 1 << endl;
-				cout << "Grade(A/A-/B/B+..etc) =>";
+				cout << "Grade =>";
 				cin >> grade;
 				subj[j].setGrade(grade);
-
 				cout << endl;
 			
 			
 			do {
 				
-					cout << "Credit hour (1,2,3...etc) =>";
+					cout << "Credit hour =>";
 				
 				cin >> credit;
 				subj[j].setCredit(credit);
 				
 			} while (credit >4 ||credit<=0);
+			
 
-			subj[i].getInfo(subj[j].getGrade(), subj[j].getCredit());
+			subj[i].getInfo(subj[j].getGrade(), subj[j].getCredit(),numbersubjtaken);
+			
 		}
 
-		
+		delete[] subj;
 		
 		cout << "Your cpa is :" << endl;
 	}
+	
 	return 0;
 	
 }

@@ -31,3 +31,13 @@ char* Subject::getGrade()
 {
 	return _grade;
 }
+
+void Subject::setCredit(int credit)
+{
+	_credithour = credit;
+}
+
+int Subject::getCredit()
+{
+	return _credithour;
+}

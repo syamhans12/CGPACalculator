@@ -13,6 +13,9 @@ public:
 	void setGrade(char* grade);
 	char* getGrade();
 
+	void setCredit(int credit);
+	int getCredit();
+
 
 };
 

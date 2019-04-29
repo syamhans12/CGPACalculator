@@ -52,6 +52,7 @@ int main()
 					cout << "Credit hour (1,2,3...etc) =>";
 				
 				cin >> credit;
+				subj.setCredit(credit);
 			} while (credit >4 ||credit<=0);
 			
 		}

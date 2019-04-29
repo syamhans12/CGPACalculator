@@ -17,7 +17,7 @@ int main()
 	Subject subj;
 	int numbersubjtaken;
 	int numberofsemester;
-	char* grade;
+	char grade[2];
 	int credit;
 
 	cout << " " << endl;
@@ -41,8 +41,8 @@ int main()
 
 				cout << "Subject " << j + 1 << endl;
 				cout << "Grade(A/A-/B/B+..etc) =>";
-				//cin >> grade;
-				//subj.setGrade(grade);
+				cin >> grade;
+				subj.setGrade(grade);
 
 				cout << endl;
 			

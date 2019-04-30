@@ -48,18 +48,16 @@ int main()
 				cin >> grade;
 				subj[j].setGrade(grade);
 				cout << endl;
-			
-			
+
+			//error detection for credit hour		
 			do {
 				
-					cout << "Credit hour =>";
-				
+				cout << "Credit hour =>";
 				cin >> credit;
-				subj[j].setCredit(credit);
 				
 			} while (credit >4 ||credit<=0);
-			
 
+			subj[j].setCredit(credit);
 			subj[i].getInfo(subj[j].getGrade(), subj[j].getCredit(),numbersubjtaken);
 			
 		}
@@ -69,6 +67,8 @@ int main()
 		cout << "Your cpa is :" << endl;
 	}
 	
+	Subject S1;
+
 	return 0;
 	
 }

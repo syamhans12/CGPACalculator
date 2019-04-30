@@ -18,5 +18,13 @@ int Semester::getCountsemester()
 	return _countsemester;
 }
 
+void Semester::setSubjcount(int x )
+{
+	_subject->setNumsubject(x);
+}
+
+
+
+
 
 

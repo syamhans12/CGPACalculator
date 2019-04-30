@@ -6,7 +6,6 @@ class Subject
 	char* _grade;
 	int _credithour;
 	int _numsubject;
-	int _mark;
 public:
 
 	Subject() {}
@@ -17,12 +16,10 @@ public:
 	void setGrade(char* grade);
 	char* getGrade();
 
-
 	void setCredit(int credit);
 	int getCredit();
 
 	
-	void getInfo(char* g, int ch,int x);
 
 
 };

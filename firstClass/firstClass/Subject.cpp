@@ -40,7 +40,7 @@ void Subject:: kiraGPA() {
 		cin >> credit[i];
 
 		cout << endl;
-		cout << "Enter points of the subject " << i + 1 << ": ";
+		cout << "Enter pointer of the subject " << i + 1 << ": ";
 		cin >> marks[i];
 
 	}

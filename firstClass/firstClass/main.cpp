@@ -1,10 +1,12 @@
 #include "Subject.h"
 #include "Semester.h"
-#include"Calculate.h"
+
 
 #include<iostream>
 #include<string>
 #include<cstring>
+#include<iomanip>
+#include<string.h>
 
  
 
@@ -19,6 +21,8 @@ int main()
 	int numberofsemester;
 	char *grade;
 	int credithour;
+	float *cpa;
+	float gpa = 0;
 	
 
 	cout << " " << endl;
@@ -30,7 +34,7 @@ int main()
 	cout << "Do you want to calculate for how many semester ? =>";
 	cin >> numberofsemester;
 	sem = new Semester[numberofsemester]; //so kat sini create size for object sem
-
+	cpa = new float[numberofsemester];
 	int numberofsubject;
 	for (int i = 0; i < numberofsemester; i++)
 	{
@@ -46,11 +50,18 @@ int main()
 			cin.getline(grade, 3);
 			cout << "\tCredit Hour=>";
 			cin >> credithour;
+			subj[j].setInfo(grade, credithour);
+			sem[i].subjCount(subj, j);
+			sem[i].credCount(subj,j);
 			
-			subj[j].compare(grade, credithour);
 		}
-
+		cpa[i] = sem[i].getsubjCount() / sem[i].getcredCount();
+		cout << endl;
+		cout << "Your cpa for semester "<<i+1<< " is:" << setprecision(2) << cpa[i];
+		cout << endl;
+		gpa += cpa[i] / numberofsemester;
 	}
+	cout << "Your gpa for total of " << numberofsemester << " semester is " <<setprecision(2) << gpa;
 
 
 	return 0;

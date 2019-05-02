@@ -3,14 +3,10 @@
 #include<iostream>
 #include<string>
 #include<cstring>
+#include<iomanip>
+#include<string.h>
 
 using namespace std;
-
-
-
-
-
-
 
 char * Subject::getGrade()
 {
@@ -22,13 +18,12 @@ int Subject::getCredithour()
 	return _credithour;
 }
 
-float Subject::compare(char * _grade, int credhour)
+void Subject::setInfo(char * grade, int credhour)
 {
-	this->_grade = _grade;
+	_grade = grade;
 	_credithour = credhour;
-
-	if (this->_grade == "A+")
-		this->eachsubj = 4.00*_credithour;
-	cout << this->eachsubj;
-	return this->eachsubj;
 }
+
+
+
+

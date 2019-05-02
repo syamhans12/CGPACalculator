@@ -10,7 +10,7 @@ public:
 
 	char* getGrade();
 	int getCredithour();
-	float compare(char * _grade, int credhour);
+	void setInfo(char * grade, int credhour);
 };
 
 #endif

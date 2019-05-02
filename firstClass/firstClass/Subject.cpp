@@ -24,4 +24,41 @@ void Subject::setInfo(char * grade, int credhour)
 	_credithour = credhour;
 }
 
+int const i = 4;
+
+void Subject:: kiraGPA() {
+	
+	int kira;
+	cout << " How many subject's points do you want to calculate? : ";
+	cin >> kira;
+
+	float credit[i];
+	float marks[i];
+	for (int i = 0; i < kira; i++)
+	{
+		cout << "Enter the credit hour for the subject " << i + 1 << ": ";
+		cin >> credit[i];
+
+		cout << endl;
+		cout << "Enter points of the subject " << i + 1 << ": ";
+		cin >> marks[i];
+
+	}
+	float sum = 0;
+	float tot;
+	for (int j = 0; j < kira; j++)
+	{
+		tot = credit[j] * marks[j];
+		sum = sum + tot;
+	}
+
+	float totCr = 0;
+	for (int k = 0; k < kira; k++)
+	{
+		totCr = totCr + credit[k];
+	}
+
+	cout << "\n\n\nTotal Points: " << sum << " . Total Credits: " << totCr << " .Total GPA: " << sum / totCr << " ." << endl;
+}
+
 

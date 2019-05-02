@@ -117,11 +117,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Calculate.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Semester.cpp" />
     <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calculate.h" />
     <ClInclude Include="Semester.h" />
     <ClInclude Include="Subject.h" />
   </ItemGroup>

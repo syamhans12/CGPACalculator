@@ -4,17 +4,13 @@
 
 class Semester 
 {
+	int _countsemester;
 	Subject* _subject;
-	float totalG=0;
-	int totalC = 0;
-	
 public:
 
-	void subjCount(Subject* s,int x);
-	float getsubjCount();
-	void credCount(Subject* ss, int z);
-	int getcredCount();
-	
+	void setCountsemester(int countsemester);
+	int getCountsemester();
+	void setSubjcount(int x );
 	
 };
 

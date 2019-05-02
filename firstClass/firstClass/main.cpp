@@ -31,8 +31,8 @@ int main()
 	cout << "\n" << endl;
 
 	cout << "Choose by entering number 1 or 2 \n" << endl;
-	cout << "\t 1. Calculate CGPA" << endl;
-	cout << "\t 2. Calculate CPA" << endl;
+	cout << "\t 1. Calculate CGPA and CGPA" << endl;
+	cout << "\t 2. Calculate GPA for 1 Semester only" << endl;
 	cout << "Enter number of your choice: " << endl;
 	cin >> input;
 	

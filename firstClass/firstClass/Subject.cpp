@@ -29,18 +29,18 @@ int const i = 4;
 void Subject:: kiraGPA() {
 	
 	int kira;
-	cout << " How many subject's points do you want to calculate? : ";
+	cout << "\nHow many subject's points do you want to calculate? :";
 	cin >> kira;
 
 	float credit[i];
 	float marks[i];
 	for (int i = 0; i < kira; i++)
 	{
-		cout << "Enter the credit hour for the subject " << i + 1 << ": ";
+		cout << "\nEnter the credit hour for the subject " << i + 1 << ": ";
 		cin >> credit[i];
 
 		cout << endl;
-		cout << "Enter points of the subject " << i + 1 << ": ";
+		cout << "\nEnter points of the subject " << i + 1 << ": ";
 		cin >> marks[i];
 
 	}
@@ -58,7 +58,7 @@ void Subject:: kiraGPA() {
 		totCr = totCr + credit[k];
 	}
 
-	cout << "\n\n\nTotal Points: " << sum << " . Total Credits: " << totCr << " .Total GPA: " << sum / totCr << " ." << endl;
+	cout << "\n\n\nTotal Points: " << sum << "\t Total Credits: " << totCr << "\t Total GPA: " << sum / totCr << endl;
 }
 
 

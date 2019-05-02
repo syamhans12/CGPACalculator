@@ -35,7 +35,7 @@ int main()
 		cout << "\t 1. Calculate CPA and GPA for more than 1 semester" << endl;
 		cout << "\t 2. Calculate CPA for one semester" << endl;
 		cout << "\t 3.Exit" << endl;
-		cout << "Enter number of your choice: " << endl;
+		cout << "Enter number of your choice: ";
 		cin >> input;
 
 		switch (input) {

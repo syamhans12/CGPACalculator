@@ -48,8 +48,10 @@ int main()
 			grade = new char[3];
 			cin.ignore();
 			cin.getline(grade, 3);
-			cout << "\tCredit Hour=>";
-			cin >> credithour;
+			do {
+				cout << "\tCredit Hour=>";
+				cin >> credithour;
+			} while (credithour < 1 || credithour > 4);
 			subj[j].setInfo(grade, credithour);
 			sem[i].subjCount(subj, j);
 			sem[i].credCount(subj,j);

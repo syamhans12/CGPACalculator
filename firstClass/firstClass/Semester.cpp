@@ -78,7 +78,9 @@ float Semester::getsubjCount()
 
 void Semester::credCount(Subject * ss, int z)
 {
-
+	if (ss[z].getCredithour() < 0 || ss[z].getCredithour() > 4)
+		totalC += 0;
+	else
 	totalC += ss[z].getCredithour();
 }
 

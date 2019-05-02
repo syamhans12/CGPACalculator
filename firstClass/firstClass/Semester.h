@@ -4,13 +4,10 @@
 
 class Semester 
 {
-	int _countsemester;
 	Subject* _subject;
 public:
 
-	void setCountsemester(int countsemester);
-	int getCountsemester();
-	void setSubjcount(int x );
+	
 	
 };
 

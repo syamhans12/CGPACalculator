@@ -16,10 +16,10 @@ int main()
 	
 	Semester *sem;
 	Subject *subj;
-	int numbersubjtaken;
 	int numberofsemester;
-	char grade[2];
-	int credit;
+	char *grade;
+	int credithour;
+	
 
 	cout << " " << endl;
 	cout << "\t CGPA Calculator" << endl;
@@ -29,45 +29,29 @@ int main()
 	
 	cout << "Do you want to calculate for how many semester ? =>";
 	cin >> numberofsemester;
-	sem = new Semester[numberofsemester];
+	sem = new Semester[numberofsemester]; //so kat sini create size for object sem
 
+	int numberofsubject;
 	for (int i = 0; i < numberofsemester; i++)
 	{
-		cout << "Subject taken for (" << i + 1 << "- SEMESTER)?=>";
-		cin >> numbersubjtaken;
-		subj = new Subject[numbersubjtaken];
-		//subj[i].setNumsubject(numbersubjtaken);
-		
-		cout << endl;
-		for (int j = 0; j < numbersubjtaken; j++)
+		cout << "Total of subject for " << i + 1 << " SEM=>";
+		cin >> numberofsubject;
+		subj = new Subject[numberofsubject];// create size for object subj.
+		for (int j = 0; j < numberofsubject; j++)
 		{
+			cout << "Subject " << j + 1 << endl;
+			cout << "\tGrade=>";
+			grade = new char[3];
+			cin.ignore();
+			cin.getline(grade, 3);
+			cout << "\tCredit Hour=>";
+			cin >> credithour;
 			
-
-				cout << "Subject " << j + 1 << endl;
-				cout << "Grade =>";
-				cin >> grade;
-				subj[j].setGrade(grade);
-				cout << endl;
-
-			//error detection for credit hour		
-			do {
-				
-				cout << "Credit hour =>";
-				cin >> credit;
-				
-			} while (credit >4 ||credit<=0);
-
-			subj[j].setCredit(credit);
-			subj[i].getInfo(subj[j].getGrade(), subj[j].getCredit(),numbersubjtaken);
-			
+			subj[j].compare(grade, credithour);
 		}
 
-		delete[] subj;
-		
-		cout << "Your cpa is :" << endl;
 	}
-	
-	Subject S1;
+
 
 	return 0;
 	

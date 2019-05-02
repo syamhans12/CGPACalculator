@@ -5,25 +5,13 @@ class Subject
 {
 	char* _grade;
 	int _credithour;
-	int _numsubject;
-	int _mark;
+	float eachsubj;
 public:
 
-	Subject() {}
-	void setNumsubject(int numsubject);
-	int getNumsubject();
-
-
-	void setGrade(char* grade);
 	char* getGrade();
-
-
-	void setCredit(int credit);
-	int getCredit();
-
-	void getInfo(char* g, int ch,int x);
-
-
+	int getCredithour();
+	void setInfo(char * grade, int credhour);
 };
 
 #endif
+

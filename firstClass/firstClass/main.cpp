@@ -32,8 +32,8 @@ int main()
 
 	do {
 		cout << "Choose by entering number 1 or 2 \n" << endl;
-		cout << "\t 1. Calculate CPA and GPA for more than 1 semester" << endl;
-		cout << "\t 2. Calculate CPA for one semester" << endl;
+		cout << "\t 1. Calculate GPA and CGPA for more than 1 semester" << endl;
+		cout << "\t 2. Calculate GPA for one semester" << endl;
 		cout << "\t 3.Exit" << endl;
 		cout << "Enter number of your choice: ";
 		cin >> input;
@@ -82,6 +82,7 @@ int main()
 			break;
 		case 3:
 			cout << "End of program." << endl;
+			break;
 		}
 	} while (input != 3);
 

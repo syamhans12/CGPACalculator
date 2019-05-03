@@ -30,55 +30,60 @@ int main()
 	cout << "\t Faculty Of Engineering" << endl;
 	cout << "\n" << endl;
 
-	cout << "Choose by entering number 1 or 2 \n" << endl;
-	cout << "\t 1. Calculate CGPA and CGPA" << endl;
-	cout << "\t 2. Calculate GPA for 1 Semester only" << endl;
-	cout << "Enter number of your choice: " << endl;
-	cin >> input;
-	
-	switch (input) {
-	case 1:
-		cout << "Do you want to calculate for how many semester ? =>";
-		cin >> numberofsemester;
-		sem = new Semester[numberofsemester]; //so kat sini create size for object sem
-		cpa = new float[numberofsemester];
-		int numberofsubject;
-		for (int i = 0; i < numberofsemester; i++)
-		{
-			cout << endl;
-			cout << "Total of subject for " << i + 1 << " SEM=>";
-			cin >> numberofsubject;
-			subj = new Subject[numberofsubject];// create size for object subj.
-			for (int j = 0; j < numberofsubject; j++)
-			{
-				cout << "Subject " << j + 1 << endl;
-				cout << "\tGrade=>";
-				grade = new char[3];
-				cin.ignore();
-				cin.getline(grade, 3);
-				do {
-					cout << "\tCredit Hour=>";
-					cin >> credithour;
-				} while (credithour < 1 || credithour > 4);
-				subj[j].setInfo(grade, credithour);
-				sem[i].subjCount(subj, j);
-				sem[i].credCount(subj, j);
+	do {
+		cout << "Choose by entering number 1 or 2 \n" << endl;
+		cout << "\t 1. Calculate CPA and GPA for more than 1 semester" << endl;
+		cout << "\t 2. Calculate CPA for one semester" << endl;
+		cout << "\t 3.Exit" << endl;
+		cout << "Enter number of your choice: ";
+		cin >> input;
 
+		switch (input) {
+		case 1:
+			cout << "Do you want to calculate for how many semester ? =>";
+			cin >> numberofsemester;
+			sem = new Semester[numberofsemester]; //so kat sini create size for object sem
+			cpa = new float[numberofsemester];
+			int numberofsubject;
+			for (int i = 0; i < numberofsemester; i++)
+			{
+				cout << endl;
+				cout << "Total of subject for " << i + 1 << " SEM=>";
+				cin >> numberofsubject;
+				subj = new Subject[numberofsubject];// create size for object subj.
+				for (int j = 0; j < numberofsubject; j++)
+				{
+					cout << "Subject " << j + 1 << endl;
+					cout << "\tGrade=>";
+					grade = new char[3];
+					cin.ignore();
+					cin.getline(grade, 3);
+					do {
+						cout << "\tCredit Hour=>";
+						cin >> credithour;
+					} while (credithour < 1 || credithour > 4);
+					subj[j].setInfo(grade, credithour);
+					sem[i].subjCount(subj, j);
+					sem[i].credCount(subj, j);
+
+				}
+				cpa[i] = sem[i].getsubjCount() / sem[i].getcredCount();
+				cout << endl;
+				cout << "Your cpa for semester " << i + 1 << " is:" << setprecision(3) << cpa[i];
+				cout << endl;
+				gpa += cpa[i] / numberofsemester;
 			}
-			cpa[i] = sem[i].getsubjCount() / sem[i].getcredCount();
 			cout << endl;
-			cout << "Your cpa for semester " << i + 1 << " is:" << setprecision(3) << cpa[i];
-			cout << endl;
-			gpa += cpa[i] / numberofsemester;
+			cout << "Your gpa total of " << numberofsemester << " semester is " << setprecision(3) << gpa;
+			break;
+		case 2:
+			Subject s1;
+			s1.kiraGPA();
+			break;
+		case 3:
+			cout << "End of program." << endl;
 		}
-		cout << endl;
-		cout << "Your gpa total of " << numberofsemester << " semester is " << setprecision(3) << gpa;
-		break;
-	case 2:
-		Subject s1;
-		s1.kiraGPA();
-		break;
-	}
+	} while (input != 3);
 
 	return 0;
 	

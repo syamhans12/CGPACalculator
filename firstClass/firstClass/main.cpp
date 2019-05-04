@@ -75,6 +75,7 @@ int main()
 			}
 			cout << endl;
 			cout << "Your gpa total of " << numberofsemester << " semester is " << setprecision(3) << gpa;
+			cout << endl;
 			break;
 		case 2:
 			Subject s1;

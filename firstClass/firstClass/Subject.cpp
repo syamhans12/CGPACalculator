@@ -29,17 +29,17 @@ int const i = 4;
 void Subject:: kiraGPA() {
 	
 	int kira;
-	cout << "\nHow many subject's points do you want to calculate? :";
+	cout << "\nHow many subject do you want to calculate? :";
 	cin >> kira;
 
 	int credit[i];
 	double marks[i];
 	for (int i = 0; i < kira; i++)
 	{
-		do {
+		
 			cout << "\nEnter the credit hour for the subject " << i + 1 << ": ";
 			cin >> credit[i];
-		} while (credit[i] > 1 || credit[i] < 4);
+		//} while (credit[i] > 1 || credit[i] < 4);
 		
 			cout << "\nEnter points of the subject " << i + 1 << ": ";
 			cin >> marks[i];

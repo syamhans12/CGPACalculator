@@ -38,10 +38,10 @@ void Subject:: kiraGPA() {
 	{
 		cout << "\nEnter the credit hour for the subject " << i + 1 << ": ";
 		cin >> credit[i];
-		
+		do {
 			cout << "\nEnter points of the subject " << i + 1 << ": ";
 			cin >> marks[i];
-		
+		} while ( marks[i] > 1 || marks[i] < 4);
 		
 	}
 	double sum = 0;

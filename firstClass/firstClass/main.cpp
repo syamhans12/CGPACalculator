@@ -31,7 +31,7 @@ int main()
 	cout << "\n" << endl;
 
 	do {
-		cout << "Choose by entering number 1 or 2 \n" << endl;
+		cout << "\nChoose by entering number 1 or 2 \n" << endl;
 		cout << "\t 1. Calculate GPA and CGPA for more than 1 semester" << endl;
 		cout << "\t 2. Calculate GPA for one semester" << endl;
 		cout << "\t 3.Exit" << endl;

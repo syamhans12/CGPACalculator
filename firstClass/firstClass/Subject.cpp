@@ -36,8 +36,10 @@ void Subject:: kiraGPA() {
 	double marks[i];
 	for (int i = 0; i < kira; i++)
 	{
-		cout << "\nEnter the credit hour for the subject " << i + 1 << ": ";
-		cin >> credit[i];
+		do {
+			cout << "\nEnter the credit hour for the subject " << i + 1 << ": ";
+			cin >> credit[i];
+		} while (credit[i] > 1 || credit[i] < 4);
 		do {
 			cout << "\nEnter points of the subject " << i + 1 << ": ";
 			cin >> marks[i];

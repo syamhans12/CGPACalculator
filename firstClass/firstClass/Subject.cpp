@@ -32,7 +32,7 @@ void Subject:: kiraGPA() {
 	cout << "\nHow many subject's points do you want to calculate? :";
 	cin >> kira;
 
-	double credit[i];
+	int credit[i];
 	double marks[i];
 	for (int i = 0; i < kira; i++)
 	{
